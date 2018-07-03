@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Build\Abbotware.Build.Configuration\Local\Zyronet.Lambda\appsettings.json" Link="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.8.3" />
+    <PackageReference Include="protobuf-net" Version="2.3.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Abbotware.Core.Data\Abbotware.Core.Data.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Core.Host\Abbotware.Core.Host.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Core.Messaging\Abbotware.Core.Messaging.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Core\Abbotware.Core.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Interop.Amazon\Abbotware.Interop.Amazon.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Interop.Castle\Abbotware.Interop.Castle.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Interop.Microsoft\Abbotware.Interop.Microsoft.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Interop.ProtoBuf\Abbotware.Interop.ProtoBuf.csproj" />
+    <ProjectReference Include="..\..\Common\Abbotware.Interop.Redis\Abbotware.Interop.Redis.csproj" />
+    <ProjectReference Include="..\Zyronet.Cloud.Cache\Zyronet.Cloud.Cache.csproj" />
+    <ProjectReference Include="..\Zyronet.Cloud.Data\Zyronet.Cloud.Data.csproj" />
+    <ProjectReference Include="..\Zyronet.Cyiote.Contracts\Zyronet.Cyiote.Contracts.csproj" />
+    <ProjectReference Include="..\Zyronet.DataModel.TimeSeries\Zyronet.DataModel.TimeSeries.csproj" />
+  </ItemGroup>
+
+</Project>

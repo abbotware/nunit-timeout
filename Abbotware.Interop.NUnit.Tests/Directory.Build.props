@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Project>
+
+  <PropertyGroup>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <LangVersion>latest</LangVersion>
+    <Company>Abbotware, LLC</Company>
+    <Authors>Anthony Abate</Authors>
+    <Product>Abbotware</Product>
+    <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyInformationalVersion>1.2.3.0</AssemblyInformationalVersion>
+    <FileVersion>1.2.3.0</FileVersion>
+    <Version>1.2.3.0</Version>
+    <NoWarn>CS8002,CS1591,SA1600</NoWarn>
+
+    <!-- ///// GLOBAL DEFAULTS  -->
+    <SourceRootDir Condition=" '$(SolutionDir)' == '' ">$(ProjectDir)../../</SourceRootDir>
+    <SourceRootDir Condition=" '$(SourceRootDir)' == '' ">$(SolutionDir)</SourceRootDir>
+    <ThirdpartyRootDir Condition=" '$(ThirdpartyRootDir)' == '' ">$(SourceRootDir)thirdparty\</ThirdpartyRootDir>
+
+  </PropertyGroup>
+
+
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' == '.csproj'">
+    <!-- STYLE COP -->
+    <!-- <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta007" PrivateAssets="all" /> -->
+
+    <!-- <AdditionalFiles Include="$(SourceRootDir)Build\Abbotware.Build\stylecop.unittest.json" > -->
+      <!-- <Link>Properties\stylecop.unittest.json</Link> -->
+    <!-- </AdditionalFiles> -->
+
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(SolutionDir)\Build\Abbotware.Build\Rulesets\Abbotware.unittest.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  </Project>

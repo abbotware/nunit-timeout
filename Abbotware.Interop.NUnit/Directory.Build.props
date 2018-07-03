@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Project>
+
+  <PropertyGroup>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <LangVersion>latest</LangVersion>
+    <Company>ZYRONET, LLC</Company>
+    <Product>Zyronet Infrastructure</Product>
+    <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyInformationalVersion>1.2.3.0</AssemblyInformationalVersion>
+    <FileVersion>1.2.3.0</FileVersion>
+    <Version>1.2.3.0</Version>
+	<NoWarn>CS8002</NoWarn>
+
+    <!-- ///// GLOBAL DEFAULTS  -->
+    <SourceRootDir Condition=" '$(SolutionDir)' == '' ">$(ProjectDir)../../</SourceRootDir>
+    <SourceRootDir Condition=" '$(SourceRootDir)' == '' ">$(SolutionDir)</SourceRootDir>
+    <ThirdpartyRootDir Condition=" '$(ThirdpartyRootDir)' == '' ">$(SourceRootDir)thirdparty\</ThirdpartyRootDir>
+
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' == '.csproj'">
+
+    <Compile Include="$(SourceRootDir)Build\Zyronet.Build\CommonAssemblyInfo.cs" >
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+    <!-- STRONG NAME SIGNING-->
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(SourceRootDir)Build\Abbotware.Build\Abbotware.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' == '.csproj'">
+    <!-- STYLE COP -->
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta007" PrivateAssets="all" />
+
+    <AdditionalFiles Include="$(SourceRootDir)Build\Zyronet.Build\stylecop.json" >
+      <Link>Properties\stylecop.json</Link>
+    </AdditionalFiles>
+
+    <!-- CODE ANALYSIS -->
+    <!-- <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" /> -->
+
+    <!-- <CodeAnalysisDictionary Include="$(SolutionDir)\Build\Abbotware.Build\CodeAnalysisDictionary.xml"> -->
+      <!-- <Link>Properties\CodeAnalysisDictionary.xml</Link> -->
+    <!-- </CodeAnalysisDictionary> -->
+
+  </ItemGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>$(SolutionDir)\Build\Abbotware.Build\Rulesets\Abbotware.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  </Project>
