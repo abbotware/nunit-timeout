@@ -1,2 +1,9 @@
 bin
 obj
+/.vs
+*.suo
+*.dtbcache
+*.ide-wal
+*.ide-shm
+*.ide
+*.lock
