@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 // <copyright file="ExpectedExceptionAttribute.cs" company="Abbotware, LLC">
-// Copyright © Abbotware, LLC 2012-2016. All rights reserved
+// Copyright © Abbotware, LLC 2012-2018. All rights reserved
 // </copyright>
 // <author>Anthony Abate</author>
 // -----------------------------------------------------------------------

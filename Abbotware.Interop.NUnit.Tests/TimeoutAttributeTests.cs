@@ -1,19 +1,19 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="InteropRedisTests.cs" company="Abbotware, LLC">
+// <copyright file="TimeoutAttributeTests.cs" company="Abbotware, LLC">
 // Copyright © Abbotware, LLC 2012-2018. All rights reserved
 // </copyright>
 // <author>Anthony Abate</author>
 //-----------------------------------------------------------------------
 
-namespace Abbotware.UnitTests.Interop.Redis
+namespace Abbotware.Interop.NUnit.Tests
 {
     using System;
     using System.Threading;
     using Abbotware.Interop.NUnit;
-    using NUnit.Framework;
+    using global::NUnit.Framework;
 
     [TestFixture]
-    public class TimeoutAttributeTests : BaseNUnitTest
+    public class TimeoutAttributeTests 
     {
         [Test]
         [Category("Interop.NUnit.UnitTests")]
