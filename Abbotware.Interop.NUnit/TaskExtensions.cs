@@ -1,11 +1,4 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="TaskExtensions.cs" company="Abbotware, LLC">
-// Copyright © Abbotware, LLC 2012-2018. All rights reserved
-// </copyright>
-// <author>Anthony Abate</author>
-// -----------------------------------------------------------------------
-
-namespace Abbotware.Core.Extensions
+﻿namespace Abbotware.Core.Extensions
 {
     using System;
     using System.Threading.Tasks;

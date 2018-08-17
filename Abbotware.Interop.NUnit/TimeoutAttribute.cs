@@ -1,11 +1,4 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="TimeoutAttribute.cs" company="Abbotware, LLC">
-// Copyright © Abbotware, LLC 2012-2018. All rights reserved
-// </copyright>
-// <author>Anthony Abate</author>
-// -----------------------------------------------------------------------
-
-namespace Abbotware.Interop.NUnit
+﻿namespace Abbotware.Interop.NUnit
 {
     using System;
     using System.Diagnostics;
