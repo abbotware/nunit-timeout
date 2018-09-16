@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Abbotware.Interop.NUnit</id>
+    <version>1.0.0</version>
+    <authors>Abbotware</authors>
+    <owners>Abbotware</owners>
+	<projectUrl>https://github.com/abbotware/nunit-timeout</projectUrl>
+	<licenseUrl>https://github.com/abbotware/nunit-timeout/blob/master/LICENSE</licenseUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple 'Timeout' attribute for NUnit compatible with .Net Core / Standard</description>
+    <tags>nunit</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="NUnit" version="3.10.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\source\nunit-timeout\Abbotware.Interop.NUnit\bin\Release\netstandard2.0\Abbotware.Interop.NUnit.dll" target="lib\netstandard2.0\Abbotware.Interop.NUnit.dll" />
+  </files>
+</package>
